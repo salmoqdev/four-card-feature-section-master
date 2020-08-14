@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width", initial-scale=1.0>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/d63b741f1d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
+    <style>
+        
+        :root {
+            --main-Dark-Blue: hsl(234, 12%, 34%);
+            --main-gray_blue: hsl(229, 6%, 66%);
+            --main-light-gray: hsl(0, 0%, 98%);
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        h1, h2, h3, h4, h5, h6, body {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            color: var(--main-Dark-Blue);
+        }
+        
+        body {
+            background: var(--main-light-gray);
+            color: var(--main-gray_blue);
+        }
+        
+        header {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            line-height: 1.5;
+        }
+        
+        .header-text {
+            width: 40%;
+        }
+        
+        .side_cards {
+            top: 100px; /* Align side cards */
+        }
+        
+        @media screen and (max-width: 601px){
+            header {
+                display: block; /* Remove flex on small screens */
+            }
+            
+            .header-text {
+                width: 100%;
+            }
+            
+            .side_cards {
+            top: auto; /* Remove alignment of side cards on small screens */
+        }
+        }
+        
+        
+        
+    </style>    
+        
+</head>
+<body>
+    
+    <header>
+        <div class="header-text">
+            <p style="font-size: 20px;">Reliable, effecient delivery</p>
+            <p style="font-size: 22px; color: var(--main-Dark-Blue);"><b>Powered by Technology</b></p>
+            <p>Our Artificial Intelligence powered tools use millions of project data points to ensure that your project is successful</p>
+        </div>
+    </header>
+    
+    <main class="w3-content">
+        <div class="w3-row-padding">
+            <div class="w3-third">
+                <div class="w3-container w3-margin-bottom w3-display-container w3-card-4 w3-topbar w3-border-cyan side_cards" style="width: 100%; height: 200px;">
+                    <h4><b>Supervisor</b></h4>
+                    <p>Monitors activity to identify project's roadblocks</p>
+                    <div class="w3-display-bottomright w3-padding">
+                        <img src="icon-supervisor.svg">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="w3-third">
+                
+                        <div class="w3-container w3-margin-bottom w3-display-container w3-card-4 w3-topbar w3-border-red" style="width: 100%; height: 200px;">
+                            <h4><b>Team Builder</b></h4>
+                            <p>Monitors activity to identify project's roadblocks</p>
+                            <div class="w3-display-bottomright w3-padding">
+                                <img src="icon-team-builder.svg">
+                            </div>
+                        </div>
+                   
+                        <div class="w3-container w3-margin-bottom w3-display-container w3-card-4 w3-topbar w3-border-amber" style="width: 100%; height: 200px;">
+                            <h4><b>Karma</b></h4>
+                            <p>Monitors activity to identify project's roadblocks</p>
+                            <div class="w3-display-bottomright w3-padding">
+                                <img src="icon-karma.svg">
+                            </div>
+                        </div>
+                    </div>
+                
+            <div class="w3-third">
+                <div class="w3-container w3-margin-bottom w3-display-container w3-card-4 w3-topbar w3-border-blue side_cards" style="width: 100%; height: 200px;">
+                    <h4><b>Calculator</b></h4>
+                    <p>Monitors activity to identify project's roadblocks</p>
+                    <div class="w3-display-bottomright w3-padding">
+                        <img src="icon-calculator.svg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <button class="w3-button w3-center" style="background: var(--main-Dark-Blue)">Order Now</button>
+        
+    </main>
+        
+</body>
+</html>
